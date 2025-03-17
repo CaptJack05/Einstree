@@ -1,0 +1,332 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  height: 100%;
+  top: 0;
+  width: 100%;
+}
+
+.Link {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  margin-right: 4rem;
+}
+
+/* adding animation to hero pic */
+@keyframes hero {
+  from {
+    width: 10rem;
+    height: 10rem;
+  }
+  to {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@keyframes hero1 {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.hero-text {
+  position: absolute;
+  height: 18rem;
+  width: 43rem;
+  top: 15rem;
+  right: 15rem;
+  color: white;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p1 {
+  margin-left: 1rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40rem;
+  }
+}
+
+/* Footer styles */
+.Footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Property for gradient animation */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+/* .slides{
+  position:absolute;
+  /* height: 60%;
+  width : 65%;
+  top: 30%;
+  left: 17.5%;
+  
+  padding: 3px; */
+
+/* .slides::after, .slides::before {
+  content: " ";
+  position: absolute;
+  height: 50%;
+  width : 65%;
+  background-image: conic-gradient(from var(--angle), transparent,black,white );
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 3px;
+  border-radius: 20px;
+  animation: 5s spin linear infinite;
+  display: flex;
+}
+/* #00ff99, #006aff, #ff0095, #ff4545, #ff4545, #006aff, #00ff99 */
+
+.slides::before {
+  filter: blur(5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+} */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-text {
+    height: 12rem;
+    width: 90%;
+    top: 10rem;
+    right: 5%;
+    border-radius: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .Link {
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    height: 10rem;
+    width: 100%;
+    top: 8rem;
+    right: 0;
+    border-radius: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .Link {
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+.blog2{
+  transition: 10s;
+}
+
+.blog:hover{
+  color: #abb07f;
+}
+
+.Blogimg{
+  transition-duration : 10s;
+}
+
+.Blogimg:hover{
+  height: 20.6rem;
+  width: 36.6rem;
+
+}
+
+.BlogCard:hover{
+  height : 32rem;
+  width : 120rem;
+}
+
+
+@property --trans{
+  syntax: "<trans>";
+  initial-value: 0;
+  inherits: false;
+}
+.items1{
+  animation: tran 40s linear 1; 
+}
+
+@keyframes tran{
+  0% {
+    transform : translateX(0);
+  }
+  100% {
+    transform : translateX(calc(-250px*9));
+  }
+} 
+
+.items1:hover{
+  animation-play-state: paused; 
+}
+
+
+.navbar{
+  border-bottom : 2px solid #dadada;
+}
+
+@media (min-width: 480px){
+  .icon1{
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .main{
+    height: 50vh;
+  }
+  .navbar{
+    width: 100%;
+    height: 20vw;
+  }
+  .Navlist{
+    display: none;
+  }
+
+  .newslides{
+    height : 40vmax;
+    width: 100%;
+    border-radius: 2px ;
+  }
+  .icon1{
+    height: 3.7vh;
+    width: 10vw;
+    font-size: 3.6vh;
+    padding: 0.1vh 0.8vh;
+    position: absolute;
+    right: 5vw;
+  }
+  .icon2{
+    display: none;
+  }
+  .SliderDots{
+    height: 2.5vh;
+    width: 5vw;
+
+  }
+  .About{
+  
+    display: flex;
+    flex-direction : column;
+    flex-wrap : wrap;
+
+  }
+  .About p {
+  
+    font-size : 1vh;
+  }
+  .Aboutus{
+    width: 90%;
+    margin: 10% 5%;
+    height: 100vh;
+  }
+.Footer{
+  height: 100vh;
+  width: 100%;
+  background: #080D1D;
+
+}
+.Footer H1{ 
+  font-size: 5vh;
+  margin:0;
+  margin-bottom: 2vh;
+  border-radius: 1vh;
+}
+.Footer legal{
+  font-size: 10vw;
+}
+}
+
+
+
+
