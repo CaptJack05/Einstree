@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Contact() {
+export default function Contactus() {
     return (
 
         <div className='absolute top-20 left-80 '>

@@ -65,33 +65,28 @@ export default function About() {
     // </div>
 
     <div className='h-[100%]   w-[100%] flex flex-col  gap-[2vh]    '>
-      {/* <div className="  h-10 w-3/12 m-5  mt-20 absolute right-1/4 -translate-x-5 font-bold">
-    <h1>About Us</h1>
-  </div>
-  <div className=" text-3xl text-white bg-red-400 h-40 w-4/12 m-5 mt-20 rounded-lg absolute left-40 ">
-    <img src="https://space-india.com/wp-content/uploads/2024/04/Cover-Images-with-Logo-2048x1729.png" alt="" />
-  </div>
+      
 
-  <div className='text-2xl text-black  w-1/2 h-4/6 m-5 mt-32 right-5 absolute font-medium text-wrap'>
-    <p>Space Technology and Education Pvt. Ltd., also recognized as SPACE India, is a pioneer organization with a legacy of 24 years in developing and popularizing Astronomy, Space Science, and STEM education and experiences at Grassroots level (K-12) and beyond. As a registered Space Tutor of the Indian Space Research Organization (ISRO), SPACE India has been instrumental in creating an impact through science, and aligns with the United Nations’ Sustainable Development Goals.
-
-      SPACE India has inspired 1.5M+ Students and empowered 1,000+ Schools through a diverse range of products and services. SPACE India is the parent company of the SPACE Group of companies.</p>
-  </div> */}
-
-      <div className='text-[5vh]  font-bold  text-orange-300 text-center shadow-sm'>
+      <div className='text-[7vh]  font-bold  text-orange-300 text-center shadow-sm'>
         About us
       </div>
-     <div className=''>
-        <p>Space Technology and Education Pvt. Ltd., also recognized as SPACE India, is a pioneer organization with a legacy of 24 years in developing and popularizing Astronomy, Space Science, and STEM education and experiences at Grassroots level (K-12) and beyond. As a registered Space Tutor of the Indian Space Research Organization (ISRO), SPACE India has been instrumental in creating an impact through science, and aligns with the United Nations’ Sustainable Development Goals.
-
-          SPACE India has inspired 1.5M+ Students and empowered 1,000+ Schools through a diverse range of products and services. SPACE India is the parent company of the SPACE Group of companies.</p>
+      <div class="text-[3vw] font-semibold ml-5 mt-5"><h4>Who We Are</h4></div>
+      <div class="mt-2 ml-5 mr-5 font-medium text-[2vw]">
+        <p>Einstree Educational Services Pvt. Ltd – We are a team of
+          passionate educators and industry professionals dedicated
+          to empowering the next generation. We believe in the
+          power of experiential learning to ignite curiosity, foster
+          innovation, and inspire lifelong learning. Our goal is to make
+          a bridge the gap between education and the real world,
+          providing students with the knowledge and skills they need
+          to thrive in an ever-evolving society.</p>
       </div>
-       <div className=" bg-[#E0F7FF]  text-center flex justify-center rounded-lg">
-        <img src={hero} className='h-[30vh] w-[]' />
-      </div>  
+      <div className=" bg-[#E0F7FF]  text-center flex justify-center rounded-lg">
+        <img src={hero} className='h-[50vh] w-[]' />
+      </div>
 
     </div>
 
-  
+
   );
 }

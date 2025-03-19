@@ -153,7 +153,7 @@ function App() {
         <div className="navbar w-[100%] h-[6vw] flex bg-[#171E40] pl-[1vw] ">
           <Navbar />
         </div>
-       
+
 
 
 
@@ -170,31 +170,45 @@ function App() {
         <About />
       </div>
 
-      <div className='  w-[100%] h-[550vh] flex relative flex-wrap flex-col gap-[5vh]  '>
+      <div className='text-[7vh]  font-bold  text-orange-300 text-center shadow-sm'>
 
-
-        <div className='flex flex-col flex-wrap h-[115vh]'>
-          <div className='  text-[5.3vh] w-[100%] h-[30vw] leading-[6vh] font-["M PLUS Rounded 1c", Sans-seri] top-0 font-bold text-orange-300   text-center p-[5%] shadow-sm  '>
-            <h1>
-              Services and Program
-            </h1>
-          </div>
-
-          <div className='  text-[5vw] h-[150vw] px-[5%] w-[100%]  text-wrap font-normal  mt-[3vh]'>
-            <p>
-              Space Technology and Education Pvt. Ltd. offers a range of meticulously curated, school-based educational programs in Astronomy, Space Science, and STEM (Robotics, Drones & AI) to promote the development of 21st-century skills in students. Our programs are the culmination of years of research and are tailored to different age groups following the National Education Policy. At Space Technology and Education Pvt. Ltd., we are committed to providing high-quality educational programs that inspire the next generation of scientists and innovators. Our team of experts is dedicated to ensuring that our programs are engaging, informative, and promote a deep understanding of the fascinating world of science and technology.
-
-              The organization is committed to nurturing the next generation of space science students by providing unparalleled educational standards. Our passion for inspiring and mentoring students is evident in their unwavering dedication to cultivating young minds and fostering a love for space science.
-
-
-            </p>
-          </div>
+        {/* <div className='flex flex-col flex-wrap h-[115vh]'> */}
+        <div className='  text-[5.3vh] w-[100%] h-[30vw] leading-[6vh] font-["M PLUS Rounded 1c", Sans-seri] top-0 font-bold text-orange-300   text-center p-[5%] shadow-sm  '>
+          <h1>
+            Services and Program
+          </h1>
         </div>
-        {
-          cards.map((s, i) => {
-            return (< Cards source={s} icons={icons[i]} />)
-          })
-        }
+        {/* </div> */}
+
+        <div className='flex flex-wrap h-[300%] w-[100%] gap-10 justify-center mb-[10%]'>
+          {
+
+            cards.map((s, i) => {
+              return (
+                <div className='w-[26%] h-[35rem] flex flex-col relative bg-slate-100 rounded-3xl rounded-t-3xl shadow-2xl'>
+                  <div className='w-full h-2/4  object-contain relative '>
+                    <img src={s} className='rounded-t-3xl h-full' alt="" />
+                    <div className='h-16 w-48 rounded-tr-[10rem] bg-white absolute  bottom-[0.1rem] object-contain'>
+                      <img src={icons[i]} className='h-20 w-48 rounded-3xl' alt="" />
+                    </div>
+
+                  </div>
+                  <div className='text-4xl font-semibold ml-5 mt-5'>
+                    <h1>
+                      {/* {props.h1} */}
+                      Space Astronomy Club
+                    </h1>
+                  </div >
+
+
+                </div>
+              )
+            })
+
+          }
+
+        </div>
+
       </div>
 
 

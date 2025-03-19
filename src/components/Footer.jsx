@@ -6,18 +6,13 @@ export default function Footer() {
     return (
         
         
-    <div className = "Footer h-96  absolute left-0  w-full bg-[#171E40] z-10">    
+    <div className = "Footer h-96  absolute left-0  w-full z-10" background="#171e40">    
         <footer className="text-zinc-50">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
-                            {/* <img
-                                src="iit.jpg"
-                                className="mr-3 h-52 w-96 mx-20"
-                                alt="Logo"
-                            /> */}
-                            <h1 className='H1'>Your Logo</h1>
+                        <img class="img-fluid" src="\src\Video\logo.png" alt="logo" />
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -76,11 +71,7 @@ export default function Footer() {
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm sm:text-center">
-                        © 2025 
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            ChinmayIndoria
-                        </a>
-                        . All Rights Reserved.
+                        © 2025. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                         <Link to="#" className="text-gray-500 hover:text-gray-900">
